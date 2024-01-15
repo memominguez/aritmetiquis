@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Progressbar from "../../components/progressbar/Progressbar";
 import drum from "../../assets/failure-drum.mp3";
 import ringbell from "../../assets/reception-bell.mp3";
@@ -18,9 +18,7 @@ function Restar() {
   let questionTimeout = 12000; // waiting time for response
 
   let deltaProgressbar = (0.2 / questionTimeout) * 1000 * 100;
-  // 0.2 = progress bar interval, sec (constant)
-
-  const inputRef = useRef(null);
+  // 0.2 = progress bar interval, sec (constant)  
 
   const generateNums = () => {
     let numlow = Math.floor(Math.random() * 9) + 1;
@@ -100,7 +98,8 @@ function Restar() {
   // ***************************************************************
 
   const handleStartover = () => {
-    location.reload();
+    setCounter(0)
+    setScore(0)
   };
 
   return (
@@ -127,8 +126,7 @@ function Restar() {
               className="input"
               placeholder="Resultado?"
               autoFocus
-              autoComplete="off"
-              ref={inputRef}
+              autoComplete="off"             
               value={respuesta}
               onChange={handleChange}
             />
