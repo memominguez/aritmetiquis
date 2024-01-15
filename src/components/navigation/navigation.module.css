@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+.header {  
+    background-color: rgb(73, 73, 255); 
+    padding-top: 0.5rem; 
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;   
+    display: flex;
+    justify-content: space-between;
+    /* border-radius: 5px; */
+  }
+
+  nav {
+  text-align: left;
+  } 
+  
+  .logosection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    height: 3.5rem;
+  }
+
+  .logospan {
+    font-family: 'Bungee Spice', 'cursive';
+    font-size: 1.2rem;
+    
+  }
+
+  .list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }  
+  
+  .list a {
+    text-decoration: none;
+    color: white; 
+    font-size: 1.1rem;   
+  }
+  
+  .list a:hover,
+  .list a.active {
+    color: #ffba53;
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 768px) {
+   .header {
+    justify-content: center;
+   }
+
+   .logocontainer {
+    display: none;
+   }
+
+   .nav {
+    margin-right: 15rem;
+   }
+  }
+
+  
+@media only screen and (max-width: 576px) {
+  .list a {
+    font-size: 1rem;
+  }
+}
