@@ -5,11 +5,11 @@ const Home = () => {
     <main className={styles.container}>
       <div className={styles.heading}>
         <h1>Bienvenido a nuestro gimnasio de Aritmética</h1>
-        <h2>
+        <h3>
           Se te invita a convertirte en un as de las operaciones aritméticas
           <br />
           ...sin calculadora, por favor.
-        </h2>
+        </h3>
       </div>
 
       <div className={styles.content}>     
@@ -22,7 +22,7 @@ const Home = () => {
           </li>
           <li>
             Un ejercicio consta de 10 preguntas. Ingresa tu respuesta y das
-            click al botón. ó ENTER si usas computadora.
+            click al botón, o ENTER si usas computadora.
           </li>
           <li>
             Los ejercicios son contra reloj. Tienes 10 segundos para responder
@@ -31,10 +31,10 @@ const Home = () => {
           <li>
             Si contestas rápido y correctamente, se te otorgan 10 puntos. Si te
             tardas un poco, pero tu respuesta es correcta, se te otorgan 5
-            puntos. Si no respondes, pasas a la siguienate pregunta.
+            puntos. Si no respondes, pasas a la siguiente pregunta.
           </li>
           <li>
-            Si la respuesta es incorrecta, suena un tambor desafinado, y cero
+            Si la respuesta es incorrecta, suena un timbal, y cero
             puntos.
           </li>
           <li>Puntaje máximo = 100.</li>
