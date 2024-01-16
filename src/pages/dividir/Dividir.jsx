@@ -99,6 +99,7 @@ function Dividir() {
   // ***************************************************************
 
   const handleStartover = () => {
+    setTimer(false)
     setCounter(0)
     setScore(0)
   };
